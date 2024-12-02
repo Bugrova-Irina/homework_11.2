@@ -1,0 +1,28 @@
+Function my_function started
+my_function ok
+3
+Function <function my_function at 0x000001D8532CC680> finished
+Function my_function started
+my_function ok
+3
+Function <function my_function at 0x000002AF76DEC680> finished
+Function my_function started
+my_function ok
+3
+Function <function my_function at 0x0000020FE314C680> finished
+Function my_function started
+my_function ok
+3
+Function <function test_log.<locals>.my_function at 0x0000020FE314D300> finished
+Function my_function started
+my_function ok
+3
+Function <function my_function at 0x0000020EB8A8C680> finished
+Function my_function started
+my_function ok
+3
+Function <function my_function at 0x0000028250FCC680> finished
+Function my_function started
+my_function ok
+3
+Function <function my_function at 0x000001A9224FC680> finished

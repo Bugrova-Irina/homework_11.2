@@ -1,4 +1,0 @@
-Function <function my_function at 0x000001B410AA80E0> started
-my_function ok
-3
-Function <function my_function at 0x000001B410AA80E0> finished
