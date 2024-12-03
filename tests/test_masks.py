@@ -3,10 +3,14 @@ import pytest
 from src.masks import get_mask_account, get_mask_card_number
 
 
-@pytest.mark.parametrize("number, expected", [
-    ('1234567812345678', '1234 56** **** 5678'),
-    ('1200567586345678', '1200 56** **** 5678'),
-    ('4569000058970124', '4569 00** **** 0124')])
+@pytest.mark.parametrize(
+    "number, expected",
+    [
+        ("1234567812345678", "1234 56** **** 5678"),
+        ("1200567586345678", "1200 56** **** 5678"),
+        ("4569000058970124", "4569 00** **** 0124"),
+    ],
+)
 def test_get_mask_card_number(number: str, expected: str) -> None:
     assert get_mask_card_number(number) == expected
 
@@ -29,10 +33,10 @@ def test_get_invalid_empty_card_number(empty_number: str) -> None:
     assert str(exc_info.value) == "Введен некорректный номер карты"
 
 
-@pytest.mark.parametrize("number, expected", [
-    ('12345678912345678913', '**8913'),
-    ('00255678912345688888', '**8888'),
-    ('11254657860054430699', '**0699')])
+@pytest.mark.parametrize(
+    "number, expected",
+    [("12345678912345678913", "**8913"), ("00255678912345688888", "**8888"), ("11254657860054430699", "**0699")],
+)
 def test_get_mask_account(number: str, expected: str) -> None:
     assert get_mask_account(number) == expected
 
